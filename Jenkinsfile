@@ -25,7 +25,7 @@ pipeline {
       {
         script
         {
-          docker.withRegistry( '', registryCredentail)
+          docker.withRegistry( '', registryCredentail )
           {
             dockerImage.push()
           }
